@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhamentoProduto">
+
+    <View
+        android:id="@+id/img_Burg_Home"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg___banner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/produto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/produto"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_voltar"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <View
+        android:id="@+id/img_golden_"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/img___golden_burger" />
+
+    <TextView
+        android:id="@+id/tradicional"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:text="Tradicional"
+        android:textSize="16dp"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/golden_burg"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:text="Golden Burguer"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/line_3"
+        />
+
+    <TextView
+        android:id="@+id/blends_de_c"
+        android:layout_width="366dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="420dp"
+        android:textSize="16dp"
+        android:textColor="@color/nameDetalhe"
+        android:text="@string/detalhamento"
+        android:lineSpacingExtra="5sp"
+        android:translationY="-2.32sp"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="88dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp"
+        android:text="Quantidade"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="top"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Menos"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="540dp"
+        android:text="-"
+        android:textSize="24dp"
+        android:textColor="#96A3AB"
+        android:background="@drawable/border_button_menos"
+        />
+    <EditText
+        android:id="@+id/contador"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="540dp"
+        android:layout_toEndOf="@+id/btn_Menos"
+        android:background="@drawable/border_contador"
+        android:text="01"
+        android:textAlignment="center"
+        android:textColor="#FB9400"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Mais"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="540dp"
+        android:layout_toEndOf="@+id/contador"
+        android:background="@drawable/border_button_mais"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/r_25_50"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="right|top"
+        android:text="R$ 25,50"
+        android:textColor="#FB9400"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Sacola"
+        android:layout_width="380dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/border_btn_sacola"
+        android:text="Adicionar na Sacola "
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seja_bem_vindo"
+        android:fontFamily="@font/arsenal"
+        android:textAlignment="textStart"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_sair"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/subtitiler"
+        android:layout_below="@+id/titulo"
+        android:layout_alignEnd="@+id/titulo"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-85dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/sair" />
+
+    <TextView
+        android:id="@+id/subtitiler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/o_que_deseja_pra_hoje"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/arsenal"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/titulo"
+
+        />
+
+    <EditText
+        android:id="@+id/btnpesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/subtitiler"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border_radius"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/digite_o_nome_do_burger"
+        android:fontFamily="@font/arsenal"
+        android:textAlignment="center"
+        android:textColorHint="@color/iputsNameColor" />
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/sliderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="5"
+        app:iss_delay="3000"
+        app:iss_period="1000"
+        android:background="@drawable/card_color"
+        app:iss_error_image="@android:color/darker_gray"
+        app:iss_placeholder="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="178dp"
+        android:layout_below="@+id/btnpesquisa"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recyle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sliderLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp" />
+
+</RelativeLayout>
